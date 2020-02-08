@@ -5,34 +5,52 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #850722;
+}
+.App {
+  background: #850722;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 700px;
+  color: #eee;
+}
+.navbar {
+  padding: 10px 20px;
+  text-align: center;
+  background: #246d7a;
+}
+.navbar h1 {
+  margin: 10px 0;
 }
 
-/* app styles */
-.App {
-  max-width: 400px;
-  margin: 30px auto;
-  text-align: center;
+.book-list {
+  margin: 20px;
 }
-nav {
-  padding: 5px;
-}
-nav ul {
-  padding: 0;
-}
-nav ul li {
-  display: inline-block;
-  margin: 0 10px;
-}
-.song-list {
-  padding: 20px;
-  margin-bottom: 20px;
-}
-.song-list ul {
+.book-list ul {
   padding: 0;
   list-style-type: none;
 }
-.song-list li {
+.book-list li {
+  background: #25aaaa;
+  border-radius: 4px;
   padding: 10px;
-  margin: 10px auto;
-  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+.book-list li:hover {
+  opacity: 0.7;
+  text-decoration: line-through;
+}
+.book-list .title {
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.2em;
+}
+.book-list .author {
+  font-size: 0.9em;
+  color: #ddd;
+}
+.empty {
+  margin: 20px;
+  text-align: center;
 }
